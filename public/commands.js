@@ -1,3 +1,5 @@
+
+var DEBUG = false;
 var loop;
 
 let centerL = (screen.width/2) - 150;
@@ -299,14 +301,14 @@ function move(l,t){
 function embiggen(factor){
  if(!factor) factor = randInt(100,130) * 0.01;  
   
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 4; i++) {
   setTimeout(function(){
 
     var currentWidth = window.innerWidth;
     var currentHeight =  window.innerHeight;
 
     var newWidth = Math.round(currentWidth * factor);
-    var newHeight = Math.round( (currentHeight + 60) * factor);
+    var newHeight = Math.round( (currentHeight + 70) * factor);
 
     resize(newWidth, newHeight);
 

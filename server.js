@@ -9,7 +9,11 @@ io.on('connection', (socket) => {
     console.log('A user connected');
 
     socket.on('logConsole', (message) => {
-        socket.broadcast.emit('logMessage', message);
+      socket.broadcast.emit('logMessage', message);
+  });
+
+    socket.on('control', (data) => {
+        socket.broadcast.emit('control', data);
     });
 
     socket.on('disconnect', () => {
