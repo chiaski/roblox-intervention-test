@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>~</title>
+    <link rel="stylesheet" href="../styling/god.css" type="text/css" />
+    <style type="text/css">
+      #img{ background-size: contain;}
+    </style>
+    
+  </head>
+  <body>
+    
+  <div id="fx"></div>
+  
+  <main id="img">
+  </main>
+    <div id="words"></div>
+  <div id="view"></div>
+  
+    
+    <script src="../jquery.min.js" type="text/javascript"></script>
+    <script src="../commands.js"></script>
+    
+    <script type="text/javascript">
+      
+$(document).click(function(){
+  win("bird.html", "", 100,100);
+});
+      
+function change(){
+  $("#img").css("background-image", `url(bird-${randInt(1,4)}.gif)`);
+  document.title = pick(["(fly)", "(fly fly)", "(fly fly fly)"]);
+}
+      
+$(document).ready(function (){
+  
+  $("#img").css("background-image", `url(bird-${randInt(1,4)}.gif)`);
+  
+  document.title = pick(["FLIGHT", "PEACE", "FREEDOM", "FAITH", "SEEKING", "UNDERTAKING", "NESTLING"]);
+
+});
+      
+      
+    </script>
+    
+    
+  </body>
+</html>
