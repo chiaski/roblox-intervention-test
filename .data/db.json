@@ -1,0 +1,23 @@
+{
+  "index": [],
+  "lol": [
+    {
+      "coords": {
+        "x": "5",
+        "y": "1"
+      },
+      "flower": "✿",
+      "color": "#cccccc",
+      "message": "I love you"
+    },
+    {
+      "coords": {
+        "x": "8",
+        "y": "1"
+      },
+      "flower": "❋",
+      "color": "#cccccc",
+      "message": "heyaaa e"
+    }
+  ]
+}
